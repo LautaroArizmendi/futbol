@@ -1,4 +1,4 @@
 export class UpdateTeamDto {
-  'nombre': string;
-  'lugar': string;
+  'name': string;
+  'location': string;
 }

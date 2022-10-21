@@ -1,4 +1,4 @@
 export class CreateTeamDto {
-  'nombre': string;
-  'lugar': string;
+  'name': string;
+  'location': string;
 }

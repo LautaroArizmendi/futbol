@@ -7,10 +7,10 @@ export class Team {
   id: number;
 
   @Column()
-  nombre: string;
+  name: string;
 
   @Column()
-  lugar: string;
+  location: string;
   @OneToMany(() => Player, (player) => player.team)
   players: Player[];
 }

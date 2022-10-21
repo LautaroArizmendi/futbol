@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Futbol - Tec Web",
+            "database": "db_fulbo",
+            "username": "fulbo",
+            "password": "del0al9"
+        }
+    ]
+}

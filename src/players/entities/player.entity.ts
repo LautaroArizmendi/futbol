@@ -7,13 +7,13 @@ export class Player {
   id: number;
 
   @Column()
-  nombre: string;
+  name: string;
 
   @Column()
-  nacionalidad: string;
+  nationality: string;
 
   @Column()
-  goles: number;
+  goals: number;
   @ManyToOne(() => Team, (team) => team.players)
   team: Team;
 }
