@@ -14,6 +14,12 @@ export class Player {
 
   @Column()
   goals: number;
+
+  @Column()
+  flag: string;
+
+  @Column()
+  position: string;
   @ManyToOne(() => Team, (team) => team.players)
   team: Team;
 }

@@ -11,6 +11,9 @@ export class Team {
 
   @Column()
   location: string;
+
+  @Column()
+  team_badges: string;
   @OneToMany(() => Player, (player) => player.team)
   players: Player[];
 }
