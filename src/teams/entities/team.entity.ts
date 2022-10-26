@@ -10,10 +10,13 @@ export class Team {
   name: string;
 
   @Column()
-  location: string;
+  stadium: string;
 
   @Column()
-  team_badges: string;
+  badges: string;
+
+  @Column()
+  year_fundation: number;
   @OneToMany(() => Player, (player) => player.team)
   players: Player[];
 }
