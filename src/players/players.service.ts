@@ -16,8 +16,11 @@ export class PlayersService {
     return this.PlayerRepository.save(createPlayerDto);
   }
 
-  findAll() {
-    return this.PlayerRepository.find();
+  async findAll() {
+    const teamall = await this.PlayerRepository.find({
+      relations: { team: true },
+    });
+    return teamall;
   }
 
   async findById(id: number) {

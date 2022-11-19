@@ -16,7 +16,7 @@ export class Player {
   goals: number;
 
   @Column()
-  flag: string;
+  age: number;
 
   @Column()
   position: string;

@@ -2,6 +2,6 @@ export class UpdatePlayerDto {
   'name': string;
   'nationality': string;
   'goals': number;
-  'flag': string;
+  'age': number;
   'position': string;
 }
