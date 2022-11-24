@@ -34,9 +34,7 @@ $ npm install
 
 ## Running the app
 
-```bash
-# development
-$ npm run start
+https://futbol-nest.onrender.com/teams
 
 # watch mode
 $ npm run start:dev
