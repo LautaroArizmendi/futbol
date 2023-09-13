@@ -17,4 +17,15 @@ describe('TeamsController', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+
+  it('findAllTeams => should return an array of Teams', async () => {
+    const team = {
+      name: 'River Plate',
+      stadium: 'Más Monumental',
+      badges: 'CARP',
+      year_fundation: '1901',
+    };
+    const result = await controller.findAllTeams();
+    expect(result).toEqual(team);
+  });
 });
