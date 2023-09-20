@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { PlayersController } from './players.controller';
 import { PlayersService } from './players.service';
-
+const mockService = {};
 describe('PlayersController', () => {
   let controller: PlayersController;
 
@@ -9,7 +9,10 @@ describe('PlayersController', () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [PlayersController],
       providers: [PlayersService],
-    }).compile();
+    })
+      .overrideProvider(PlayersService)
+      .useValue(mockService)
+      .compile();
 
     controller = module.get<PlayersController>(PlayersController);
   });
