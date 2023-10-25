@@ -5,11 +5,25 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+env:
+  DB_NAME: db_fulbo
+  DB_PASSWORD: del0al9
+  DB_HOST: localhost
+  DB_PORT: 5432
+  DB_USER: fulbo
+  
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres
+        ports: 
+          - 5432:5432
+        env:
+          POSTGRES_PASSWORD: ${{ env.DB_PASSWORD }}
+          POSTGRES_DB: ${{ env.DB_NAME }}
 
     strategy:
       matrix:
