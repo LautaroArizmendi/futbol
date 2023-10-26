@@ -43,6 +43,6 @@ describe('TeamsController', () => {
 
   it('findAllTeams => should return an array of Teams', async () => {
     const result = await controller.findAllTeams();
-    expect(result).toEqual(mock.teams);
+    expect(result).toEqual(teams);
   });
 });
