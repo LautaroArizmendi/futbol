@@ -11,6 +11,7 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 [![codecov](https://codecov.io/gh/LautaroArizmendi/futbol/graph/badge.svg?token=NMG82Z8D79)](https://codecov.io/gh/LautaroArizmendi/futbol)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/00a625c6f4b84332b7a65fabbae41707)](https://app.codacy.com/gh/LautaroArizmendi/futbol/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## Installation
 
