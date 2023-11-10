@@ -25,6 +25,7 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[![codecov](https://codecov.io/gh/LautaroArizmendi/futbol/graph/badge.svg?token=NMG82Z8D79)](https://codecov.io/gh/LautaroArizmendi/futbol)
 
 ## Installation
 
