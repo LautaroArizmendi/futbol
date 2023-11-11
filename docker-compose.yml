@@ -1,7 +1,7 @@
 version: '2'
 services:
   nest:
-    image: container-backend
+    image: lautaroarizmendi/futbol-nest
     volumes:
       - ./:/opt/app
     environment:
@@ -12,6 +12,7 @@ services:
       - DB_NAME=db_fulbo
     ports:
       - "3000:3000"
+      
   postgres:
     image: 'postgres:latest'
     restart: always
