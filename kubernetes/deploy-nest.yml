@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: futbol-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: futbol-backend
+  template:
+    metadata:
+      labels:
+        app: futbol-backend
+    spec:
+      containers:
+        - name: futbol-backend
+          image: lautaroarizmendi/futbol-backend
+          ports:
+            - containerPort: 3000
+          env:
+            - name: DB_HOST
+              value: isabelle.db.elephantsql.com
+            - name: DB_NAME
+              value: cyygquwb
+            - name: DB_PASSWORD
+              value: fp_jMgPxo7J9C9d_UY5aW9xrkX_P_Q1U
+            - name: DB_PORT
+              value: '5432'
+            - name: DB_USER
+              value: cyygquwb
